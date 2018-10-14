@@ -3,3 +3,4 @@
 .vscode
 aws.credentials.json
 .DS_Store
+.idea

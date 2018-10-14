@@ -1,7 +1,7 @@
 module.exports = {
   apps: [
     {
-      name: "lilenko_ru",
+      name: "print-leto",
       script: "npm",
       args: "start",
       watch: true,

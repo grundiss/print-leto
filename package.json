@@ -9,7 +9,7 @@
     "build-server": "RENDER_MODE=SERVER babel src --out-dir dist/",
     "build": "rm -rf ./dist && NODE_ENV=production RENDER_MODE=BROWSER yarn build-client && NODE_ENV=production RENDER_MODE=SERVER yarn build-server",
     "build-watch": "rm -rf ./dist && NODE_ENV=development RENDER_MODE=BROWSER yarn build-client --watch --devtool=inline-source-map & NODE_ENV=development RENDER_MODE=SERVER yarn build-server --source-maps inline --delay 2.0 --watch",
-    "start": "rm -f /tmp/lilenko_ru.sock && SOCKET=/tmp/lilenko_ru.sock node ./index.js",
+    "start": "rm -f /tmp/print-leto.sock && SOCKET=/tmp/print-leto.sock node ./index.js",
     "start-watch": "NODE_ENV=development DEBUG=express:* RENDER_MODE=SERVER nodemon --inspect index.js --watch dist",
     "precommit": "lint-staged"
   },
