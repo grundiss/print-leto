@@ -1,0 +1,41 @@
+.form {
+    margin: 0 auto;
+}
+
+.label {
+    text-align: right;
+    padding-right: 20px;
+    font-weight: normal;
+    padding-bottom: 15px;
+}
+
+.input {
+    font-size: 24px;
+    padding: 2px 3px 3px 3px;
+    width: 400px;
+}
+
+.inputError {
+    border-color: #ff4629;
+}
+
+.goBlock {
+    margin-top: 40px;
+    text-align: center;
+}
+
+.button {
+    font-size: 28px;
+    background-color: #fff;
+    color: #000;
+    border: 1px solid #fff1a4;
+    border-radius: 3px;
+    padding: 10px 40px;
+    cursor: pointer;
+    transition: all 0.2s;
+}
+
+.button:hover {
+    background-color: #fff1a4;
+    color: #000;
+}

@@ -1,0 +1,75 @@
+.footer {
+  margin-top: 50px;
+  padding: 40px 10px 40px;
+  background: #28313a;
+  color: #ccc;
+  overflow: hidden;
+}
+
+@media (max-width: 420px) {
+  .footer {
+    margin-left: -10px;
+    margin-right: -10px;
+  }
+}
+
+.nav {
+  float: right;
+  width: 30%;
+}
+
+@media (max-width: 420px) {
+  .nav {
+    float: none;
+    width: auto;
+  }
+}
+
+.navLink {
+  display: block;
+  margin-bottom: 10px;
+}
+
+.left {
+  margin-right: 40%;
+}
+
+@media (max-width: 420px) {
+  .left {
+    margin-right: 0;
+  }
+}
+
+.contacts {
+  margin-top: 25px;
+  border: 1px solid #666;
+  border-width: 1px 0 0 0;
+  padding-top: 25px;
+}
+
+.social {
+  margin-top: 25px;
+  border: 1px solid #666;
+  border-width: 1px 0 0 0;
+  padding-top: 25px;
+}
+
+.socialButton {
+  cursor: pointer;
+}
+
+.socialButton:hover {
+  color: #fff1a4;
+}
+
+:global(.SocialMediaShareButton) {
+  display: inline;
+}
+
+@media (max-width: 420px) {
+  :global(.SocialMediaShareButton) {
+    display: inline-block;
+    margin-right: 20px;
+    transform: scale(1.5);
+  }
+}

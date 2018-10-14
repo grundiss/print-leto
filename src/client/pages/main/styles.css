@@ -1,0 +1,131 @@
+@import url("../common.css");
+
+.firstScreen,
+.thirdScreen,
+.fifthScreen,
+.seventhScreen,
+.ninthScreen {
+  background: #000;
+  min-height: calc(100vh - 83px);
+}
+
+.firstScreenInner,
+.thirdScreenInner,
+.fifthScreenInner,
+.seventhScreenInner,
+.ninthScreenInner {
+  color: #f2f2f2;
+  padding: 85px 0 85px;
+  font-size: 24px;
+  width: 50%;
+  margin: 0 auto;
+}
+
+.secondScreen {
+  min-height: calc(100vh - 83px);
+  font-family: "Lobster", serif;
+  overflow: hidden;
+}
+
+.secondScreenInner {
+  font-size: 1.3em;
+  line-height: 1.4em;
+  width: 50%;
+  margin: 0 auto;
+  text-align: center;
+  padding: 85px 0;
+}
+
+.center {
+  text-align: center;
+}
+
+.fourthScreen {
+  min-height: calc(100vh - 83px);
+}
+
+.fourthScreenInner {
+  font-size: 1.3em;
+  line-height: 1.4em;
+  margin: 0 30px;
+  padding: 85px 0;
+}
+
+.whiteScreenHeader {
+  color: #ff4629;
+  font-size: 36px;
+  margin-bottom: 30px;
+  font-family: "Lobster", serif;
+  text-align: center;
+}
+
+.fourthScreenCols {
+  display: flex;
+  justify-content: center;
+}
+
+.fourthScreenCol {
+  width: 500px;
+  margin-right: 50px;
+}
+
+.fourthScreenCol:last-child {
+  margin-right: 0;
+}
+
+.fourthScreenColHeader .fourthScreenColHeaderSpan {
+  color: #fff;
+  font-weight: bold;
+  background: #000;
+    padding: 1px 5px 2px;
+}
+
+.sixthScreen {
+  min-height: calc(100vh - 83px);
+  height: 600px;
+  overflow: hidden;
+}
+
+.sixthScreenMediaBg {
+  position: absolute;
+  z-index: 30;
+}
+
+.sixthScreenMedia {
+  max-width: 400px;
+}
+
+.sixthScreenInner {
+  margin: 0 30px;
+  padding: 85px 0;
+  position: relative;
+}
+
+.sixthScreenCaption {
+  position: absolute;
+  z-index: 50;
+  width: 40%;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 30px;
+  line-height: 1.4;
+  background: url("https://png.pngtree.com/thumb_back/fw800/back_pic/02/68/29/63579059efd91a7.jpg");
+  color: #000;
+  opacity: 0;
+  transition: opacity 0.7s;
+}
+
+.sixthScreenCaption:hover {
+  opacity: 1;
+}
+
+.eighthScreen {
+    min-height: calc(100vh - 83px);
+    overflow: hidden;
+}
+
+.eighthScreenInner {
+    width: 50%;
+    margin: 0 auto;
+    padding: 85px 0;
+}

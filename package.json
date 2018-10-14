@@ -1,0 +1,63 @@
+{
+  "name": "lilenko.ru",
+  "version": "1.0.0",
+  "main": "index.js",
+  "author": "grundiss <grundiss@gmail.com>",
+  "license": "MIT",
+  "scripts": {
+    "build-client": "RENDER_MODE=BROWSER webpack --config webpack.config.js",
+    "build-server": "RENDER_MODE=SERVER babel src --out-dir dist/",
+    "build": "rm -rf ./dist && NODE_ENV=production RENDER_MODE=BROWSER yarn build-client && NODE_ENV=production RENDER_MODE=SERVER yarn build-server",
+    "build-watch": "rm -rf ./dist && NODE_ENV=development RENDER_MODE=BROWSER yarn build-client --watch --devtool=inline-source-map & NODE_ENV=development RENDER_MODE=SERVER yarn build-server --source-maps inline --delay 2.0 --watch",
+    "start": "rm -f /tmp/lilenko_ru.sock && SOCKET=/tmp/lilenko_ru.sock node ./index.js",
+    "start-watch": "NODE_ENV=development DEBUG=express:* RENDER_MODE=SERVER nodemon --inspect index.js --watch dist",
+    "precommit": "lint-staged"
+  },
+  "dependencies": {
+    "aws-sdk": "^2.176.0",
+    "axios": "^0.17.1",
+    "babel-cli": "^6.26.0",
+    "babel-loader": "^7.1.2",
+    "babel-plugin-css-modules-transform": "^1.3.1",
+    "babel-plugin-inline-json-import": "^0.2.1",
+    "babel-plugin-module-resolver": "^3.0.0",
+    "babel-plugin-transform-class-properties": "^6.24.1",
+    "babel-plugin-transform-object-rest-spread": "^6.26.0",
+    "babel-preset-env": "^1.6.1",
+    "babel-preset-react": "^6.24.1",
+    "body-parser": "^1.18.2",
+    "classnames": "^2.2.5",
+    "css-loader": "^0.28.7",
+    "express": "^4.16.2",
+    "extract-text-webpack-plugin": "^3.0.2",
+    "file-loader": "^1.1.6",
+    "font-awesome": "^4.7.0",
+    "nodemon": "^1.14.3",
+    "react": "^16.2.0",
+    "react-dom": "^16.2.0",
+    "react-fontawesome": "^1.6.1",
+    "react-images": "^0.5.14",
+    "react-maskedinput": "^4.0.1",
+    "react-photo-gallery": "^6.0.22",
+    "react-share": "^1.19.0",
+    "style-loader": "^0.19.1",
+    "uglifyjs-webpack-plugin": "^1.1.6",
+    "url-loader": "^0.6.2",
+    "webpack": "^3.10.0"
+  },
+  "devDependencies": {
+    "husky": "^0.14.3",
+    "lint-staged": "^6.0.0",
+    "prettier": "1.9.2"
+  },
+  "lint-staged": {
+    "*.{js,json,jsx}": [
+      "prettier --write",
+      "git add"
+    ]
+  },
+  "prettier": {
+    "printWidth": 100,
+    "trailingComma": "es5"
+  }
+}

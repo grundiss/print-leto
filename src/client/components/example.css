@@ -1,0 +1,61 @@
+.soYouAre {
+  font-size: 36px;
+  font-family: "Lobster", serif;
+  color: #fff1a4;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.cols {
+  display: flex;
+  justify-content: center;
+    min-height: 200px;
+}
+
+.col {
+  width: 300px;
+  margin-left: 30px;
+}
+
+.label {
+  display: block;
+    margin-bottom: 15px;
+}
+
+.label input[type="radio"] {
+  display: none;
+}
+
+.caption {
+  display: inline;
+    border-bottom: 4px solid #000;
+    cursor: pointer;
+}
+
+.caption:hover {
+    border-bottom: 4px dotted #999040;
+}
+
+.selected .caption {
+  border-bottom: 4px dotted #fff1a4;
+}
+
+.go {
+    text-align: center;
+}
+
+.goButton {
+    font-size: 28px;
+    background-color: #000;
+    color: #ff4629;
+    border: 1px solid #ff4629;
+    border-radius: 3px;
+    padding: 10px 40px;
+    cursor: pointer;
+    transition: all 0.2s;
+}
+
+.goButton:hover {
+    background-color: #ff4629;
+    color: #000;
+}

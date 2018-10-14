@@ -1,0 +1,10 @@
+{
+  "presets": ["env", "react"],
+  "plugins": [
+    ["module-resolver", { "root": ["./src"] }],
+    ["css-modules-transform", { "generateScopedName": "[local]_[hash:base64:5]" }],
+    ["inline-json-import", {}],
+    ["transform-class-properties"],
+    ["babel-plugin-transform-object-rest-spread"]
+  ]
+}
